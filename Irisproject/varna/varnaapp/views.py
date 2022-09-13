@@ -21,7 +21,7 @@ def predect(request):
         # petal_length = float(input("Enter petal_length: "))
         # petal_width = float(input("Enter petal_width: "))
 
-        model=pd.read_pickle(r"C:\Users\Sai Praneeth\OneDrive\Desktop\kog test\varna\varnaapp\new_model.pickle")
+        model=pd.read_pickle(r"D:\iris\Irisproject\varna\varnaapp\new_model.pickle")
         result = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
         print(result[0])
         classification =result[0]
