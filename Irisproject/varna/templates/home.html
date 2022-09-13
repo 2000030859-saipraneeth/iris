@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/form.css">
+    <title>Iris Prediction</title>
+</head>
+<body>
+    <!-- <form action="result" method="POST">
+        {% csrf_token %}
+        <input type="number" required name="sepal_length">
+        <input type="number" required name="sepa_width">
+        <input type="number" required name="petal_length">
+        <input type="number" required name="petal_width">
+        <button type="submit" value="submit">Submit</button>
+
+    </form> -->
+
+    <div class="shade">
+		<div class="blackboard">
+				<div class="form">
+                    <form action="predect" method="POST">
+                        {% csrf_token %}
+						<p>
+								<label>sepal_length: </label>
+								<input type="text" name="sepal_length" />
+						</p>
+						<p>
+								<label>sepa_width: </label>
+								<input type="text" name="sepa_width" />
+						</p>
+						<p>
+								<label>petal_length: </label>
+								<input type="text" name="petal_length" />
+						</p>
+						<p>
+								<label>petal_width: </label>
+								<input type="text" name="petal_width" />
+						</p>
+					
+						<p class="wipeout">
+								<input type="submit" id="result" />
+						</p>
+                    </form>
+				</div>
+		</div>
+</div>
+</body>
+</html>
